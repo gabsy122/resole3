@@ -95,7 +95,7 @@ export default function Hero({ onStartRequest }: HeroProps) {
                   <div className="absolute inset-0 bg-stone-950/20" />
                   <div className="absolute inset-x-4 bottom-4 bg-white/95 border border-stone-200 shadow-sm rounded-lg p-3">
                     <p className="text-[11px] font-mono text-orange-600 font-extrabold uppercase tracking-wider">Example assessment view</p>
-                    <p className="text-xs text-stone-800 mt-1 font-semibold">"Sole rubber worn thin. Active edge holding but right rand requires split patching ($20 extra)."</p>
+                    <p className="text-xs text-stone-800 mt-1 font-semibold">"Sole rubber worn thin. Active edge holding but right rand requires split patching (₱20 extra)."</p>
                   </div>
                 </div>
 
