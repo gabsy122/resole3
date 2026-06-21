@@ -87,7 +87,7 @@ export default function App() {
         {
           status: OrderStatus.AWAITING_SHIPMENT,
           timestamp: new Date().toISOString(),
-          note: `Customer approved the quoted proposal of $${found.quotePrice || 55}. Order is authorized for mail-in package delivery.`
+          note: `Customer approved the quoted proposal of ₱${found.quotePrice || 55}. Order is authorized for mail-in package delivery.`
         }
       ]
     };
