@@ -112,7 +112,7 @@ export default function AdminDashboard({ orders, onUpdateOrder }: AdminDashboard
         {
           status: OrderStatus.QUOTE_OFFERED,
           timestamp: new Date().toISOString(),
-          note: `Cobbler assessment complete: Approved. Processed with secret elastomeric Formula Resoleution™. Quoted: $${assessmentPrice}. Cobbler Notes: "${baseNote}"`
+          note: `Cobbler assessment complete: Approved. Processed with secret elastomeric Formula Resoleution™. Quoted: ₱${assessmentPrice}. Cobbler Notes: "${baseNote}"`
         }
       ]
     };
@@ -419,7 +419,7 @@ export default function AdminDashboard({ orders, onUpdateOrder }: AdminDashboard
                     <div className="flex items-center justify-between py-1 border-t border-b border-stone-100 my-2">
                       <div className="text-[11px]">
                         <span className="font-extrabold text-stone-800 block">Requires Rand Repair patches?</span>
-                        <span className="text-stone-500 font-sans text-xs">Adds $20.00 to proposal quote</span>
+                        <span className="text-stone-500 font-sans text-xs">Adds ₱20.00 to proposal quote</span>
                       </div>
                       <input
                         type="checkbox"
@@ -436,10 +436,10 @@ export default function AdminDashboard({ orders, onUpdateOrder }: AdminDashboard
                     {/* Pricing input cost */}
                     <div>
                       <label htmlFor="assessmentPrice" className="block text-[10.5px] font-mono text-stone-500 uppercase mb-1 font-bold">
-                        Est. Price Quote Proposal ($ USD)
+                        Est. Price Quote Proposal (₱ PHP)
                       </label>
                       <div className="relative">
-                        <span className="absolute left-3 top-2.5 text-xs text-stone-400 font-bold">$</span>
+                        <span className="absolute left-3 top-2.5 text-xs text-stone-400 font-bold">₱</span>
                         <input
                           type="number"
                           id="assessmentPrice"
@@ -487,7 +487,7 @@ export default function AdminDashboard({ orders, onUpdateOrder }: AdminDashboard
 
                   <div className="bg-white p-3 rounded-lg border border-stone-200 text-xs text-stone-500 space-y-1.5 shadow-xs">
                     <p>Current Stage: <span className="text-orange-655 font-bold uppercase">{selectedOrder.status}</span></p>
-                    <p>Agreed pricing quote: <span className="text-stone-900 font-extrabold">${selectedOrder.quotePrice} USD</span></p>
+                    <p>Agreed pricing quote: <span className="text-stone-900 font-extrabold">₱{selectedOrder.quotePrice} PHP</span></p>
                     <p>Cobbler notes published: <span className="italic text-stone-605">"{selectedOrder.cobblerNotes}"</span></p>
                   </div>
 
