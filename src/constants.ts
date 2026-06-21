@@ -49,7 +49,7 @@ export const INITIAL_MOCK_ORDERS: ResoleOrder[] = [
       {
         status: OrderStatus.QUOTE_OFFERED,
         timestamp: "2026-06-18T16:05:00Z",
-        note: "Cobbler examined photos: Sole resole only. Approved for $55. Waiting for Brooke to accept."
+        note: "Cobbler examined photos: Sole resole only. Approved for ₱55. Waiting for Brooke to accept."
       }
     ]
   },
