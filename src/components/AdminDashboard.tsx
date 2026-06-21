@@ -441,10 +441,13 @@ export default function AdminDashboard({ orders, onUpdateOrder }: AdminDashboard
                       <div className="relative">
                         <span className="absolute left-3 top-2.5 text-xs text-stone-400 font-bold">₱</span>
                         <input
-                          type="number"
+                          type="text"
                           id="assessmentPrice"
-                          value={assessmentPrice}
-                          onChange={(e) => setAssessmentPrice(Number(e.target.value))}
+                          value={assessmentPrice || ""}
+                          onChange={(e) => {
+                            const val = e.target.value.replace(/[^0-9]/g, "");
+                            setAssessmentPrice(val ? Number(val) : 0);
+                          }}
                           placeholder="55"
                           className="w-full font-mono text-xs rounded-lg bg-white border border-stone-250 pl-7 pr-3 py-2.5 text-stone-900 placeholder-stone-300 focus:border-orange-500 focus:outline-none"
                         />
