@@ -233,20 +233,20 @@ export default function CustomerOrderView({ order, onAcceptQuote }: CustomerOrde
               <div className="md:col-span-4 border-t md:border-t-0 md:border-l border-stone-150 pt-3 md:pt-0 pl-0 md:pl-4 flex flex-col justify-between" id="price-quote-calc-view">
                 <div>
                   <p className="text-[10px] uppercase font-mono text-stone-450 font-bold">Price Quote Summary</p>
-                  <div className="flex items-baseline gap-1 mt-1">
-                    <span className="text-2xl font-black text-stone-900 font-display">${order.quotePrice}</span>
-                    <span className="text-xs text-stone-500 font-mono">USD</span>
+                  <div className="flex items-baseline gap-1 mt-1">                    
+                    <span className="text-2xl font-black text-stone-900 font-display">₱{order.quotePrice}</span>
+                    <span className="text-xs text-stone-500 font-mono">PHP</span>
                   </div>
                 </div>
 
                 <div className="text-[10.5px] text-stone-500 font-mono space-y-1 mt-2 md:mt-0 pt-2 border-t border-stone-100">
                   <div className="flex justify-between">
                     <span>Sole Resole:</span>
-                    <span className="font-semibold text-stone-700">$55.00</span>
+                    <span className="font-semibold text-stone-700">₱55.00</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Rand Repair:</span>
-                    <span className="font-semibold text-stone-700">${order.randRepair || (order.quotePrice ?? 0) > 60 ? "20.00" : "0.00"}</span>
+                    <span className="font-semibold text-stone-700">₱{order.randRepair || (order.quotePrice ?? 0) > 60 ? "20.00" : "0.00"}</span>
                   </div>
                 </div>
               </div>
