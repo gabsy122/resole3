@@ -76,7 +76,7 @@ export const INITIAL_MOCK_ORDERS: ResoleOrder[] = [
       {
         status: OrderStatus.QUOTE_OFFERED,
         timestamp: "2026-06-14T11:00:00Z",
-        note: "Quote of $75 including dual toe caps proposed."
+        note: "Quote of ₱75 including dual toe caps proposed."
       },
       {
         status: OrderStatus.AWAITING_SHIPMENT,
@@ -113,7 +113,7 @@ export const INITIAL_MOCK_ORDERS: ResoleOrder[] = [
       {
         status: OrderStatus.QUOTE_OFFERED,
         timestamp: "2026-06-10T12:00:00Z",
-        note: "Quoted $60."
+        note: "Quoted ₱60."
       },
       {
         status: OrderStatus.AWAITING_SHIPMENT,
