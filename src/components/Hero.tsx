@@ -24,10 +24,6 @@ export default function Hero({ onStartRequest }: HeroProps) {
           
           {/* Hero text section */}
           <div className="space-y-6 lg:col-span-7" id="hero-text-block">
-            <div className="inline-flex items-center space-x-2 rounded-full bg-stone-100 px-3 py-1.5 text-xs font-mono text-stone-700 border border-stone-200">
-              <span className="flex h-2 w-2 rounded-full bg-orange-500 animate-pulse"></span>
-              <span>Accepting National Mail-In Orders</span>
-            </div>
             
             <h2 className="text-4xl font-black tracking-tight text-stone-900 sm:text-5xl lg:text-5xl uppercase leading-tight sm:leading-none font-display">
               Save Your Shoes.<br />
