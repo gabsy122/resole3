@@ -12,12 +12,7 @@ export default function Hero({ onStartRequest }: HeroProps) {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-orange-50/40 via-stone-50/50 to-white pointer-events-none" />
       
       {/* Top Banner announcing quality service */}
-      <div className="relative bg-orange-50/60 border-b border-orange-100/70 px-4 py-2.5 text-center" id="hero-top-banner">
-        <p className="flex items-center justify-center gap-2 text-xs font-semibold text-orange-900">
-          <Sparkles className="h-3.5 w-3.5 text-orange-600" />
-          <span>Equipped with authentic Italian pressing rigs & elite proprietary vulcanization rubber formulas.</span>
-        </p>
-      </div>
+
 
       <div className="relative mx-auto max-w-7xl px-4 pt-16 pb-20 sm:px-6 sm:pt-20 sm:pb-24 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-center">
